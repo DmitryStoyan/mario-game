@@ -1,0 +1,130 @@
+body {
+  background-color: #f6f6f6;
+  padding: 0;
+  margin: 0;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #111;
+}
+
+#sky-canvas {
+  z-index: 1;
+}
+
+#bg-canvas {
+  z-index: 2;
+}
+
+#fg-canvas {
+  z-index: 3;
+}
+
+.finish-popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 50vh;
+  overflow: scroll;
+  font-size: 30px;
+  border: 4px solid black;
+  background: white;
+  z-index: 3;
+}
+
+.finish__header {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.finish__list {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding: 15px 15px;
+  list-style-type: none;
+}
+
+.finish__item {
+  margin-bottom: 10px;
+}
+
+.previous__header {
+  margin: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.previous__list {
+  padding: 0;
+  margin: 0;
+  padding: 15px 15px;
+  list-style-type: none;
+}
+
+.previous__item {
+  margin-bottom: 10px;
+}
+
+.finish__button {
+  border-radius: 0%;
+  align-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 50px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  background: white;
+  position: sticky;
+  bottom: 0;
+}
+
+.finish__button:hover {
+  background-color: #f39c12;
+}
+
+.environment__playground {
+  flex-grow: 1;
+  width: 1022px;
+  height: 614px;
+  position: relative;
+  background-color: aqua;
+}
+
+.plane {
+  width: 200px;
+  height: 76px;
+  position: absolute;
+  background-image: url("airplane.png");
+  background-size: cover;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.current-player {
+  background-color: yellow;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+@font-face {
+  font-family: "PixelEmulator";
+  src: url("../font/Pixel Emulator.otf");
+}

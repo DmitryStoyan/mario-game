@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mario</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="sky-canvas" width="912" height="624"></canvas>
+    <canvas id="bg-canvas" width="912" height="624"></canvas>
+    <canvas id="fg-canvas" width="912" height="624"></canvas>
+
+    <div id="leaderboard_over" class="finish-popup hidden">
+      <h2 class="finish__header">Таблица рекордов</h2>
+      <table id="leaderboard-table" class="finish__list">
+        <thead>
+          <tr>
+            <th class="finish__item" data-type="name">Имя</th>
+            <th class="finish__item" data-type="money">Монеты</th>
+            <th class="finish__item" data-type="time">Время</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboard-body"></tbody>
+      </table>
+      <button class="finish__button">Попробовать ещё раз</button>
+    </div>
+    <span id="player-name" class="player-name" hidden></span>
+    <span id="monety" class="monety" hidden></span>
+
+    <script src="js/objects.js"></script>
+    <script src="js/bloczekMonet.js"></script>
+    <script src="js/grzyb.js"></script>
+    <script src="js/bullet.js"></script>
+    <script src="js/mushroomBlock.js"></script>
+    <script src="js/blockOfBricks.js"></script>
+    <script src="js/fragmentBrick.js"></script>
+    <script src="js/platforma.js"></script>
+    <script src="js/picture.js"></script>
+    <script src="js/wall.js"></script>
+    <script src="js/moneta.js"></script>
+    <script src="js/monster.js"></script>
+    <script src="js/mario.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/death.js"></script>
+    <script src="js/physics.js"></script>
+    <script src="js/entry.js"></script>
+    <script src="js/moving.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="./js/player.js"></script>
+  </body>
+</html>
