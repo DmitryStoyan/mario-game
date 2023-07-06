@@ -30,7 +30,7 @@
 
 ### Ссылка на игру:
 
-- [Game Mario]()
+- [Game Mario](https://mario-game-three.vercel.app/)
 
 ### Доработка проекта будет включать:
 
